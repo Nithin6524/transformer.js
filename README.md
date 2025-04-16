@@ -158,6 +158,3 @@ transformer.js/
 - [Chrome Extension Development Guide](https://developer.chrome.com/docs/extensions/mv3/getstarted/)
 - [WebAssembly Documentation](https://webassembly.org/docs/)
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
