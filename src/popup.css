@@ -1,0 +1,154 @@
+/* Theme Variables */
+:root {
+    /* Light Theme (default) */
+    --bg-color: #f8f9fa;
+    --text-color: #212529;
+    --primary-color: #6c5ce7;
+    --secondary-color: #a29bfe;
+    --border-color: #dee2e6;
+    --input-bg: #ffffff;
+    --output-bg: #f1f3f5;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --hover-color: #e9ecef;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --bg-color: #212529;
+    --text-color: #f8f9fa;
+    --primary-color: #a29bfe;
+    --secondary-color: #6c5ce7;
+    --border-color: #495057;
+    --input-bg: #343a40;
+    --output-bg: #2b3035;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --hover-color: #343a40;
+}
+
+/* Base Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html,
+body {
+    min-width: 400px;
+    min-height: 500px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container Styles */
+.container {
+    width: 380px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+    background-color: var(--bg-color);
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.theme-toggle:hover {
+    background-color: var(--hover-color);
+}
+
+/* Input Styles */
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-label {
+    font-size: 14px;
+    color: var(--primary-color);
+    margin-top: 4px;
+    margin-left: 2px;
+}
+
+#text {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#text:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px var(--secondary-color);
+}
+
+/* Output Styles */
+.output-container {
+    background-color: var(--output-bg);
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.output-header {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+}
+
+#output {
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+    min-height: 120px;
+    white-space: pre-wrap;
+    color: var(--text-color);
+    overflow-x: auto;
+}

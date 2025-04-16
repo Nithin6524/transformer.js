@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformers.js | Sample Browser Extension</title>
+
+    <!-- Load styles -->
+    <link rel="stylesheet" href="popup.css" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Transformers.js</h1>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+        <h2>Run 🤗 Transformers in a Browser Extension!</h2>
+        <div class="input-container">
+            <input id="text" placeholder="Enter text here">
+            <div class="input-label">Text to analyze</div>
+        </div>
+        <div class="output-container">
+            <div class="output-header">Results</div>
+            <pre id="output"></pre>
+        </div>
+    </div>
+</body>
+
+</html>
